@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME LIBRARY -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONT STYLE -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+
+    <!-- MAIN STYLESHEET -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Weather API App</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Weather App by <span>Vay Kaushik</span></h1>
+
+        <div class="card">
+
+            <div class="search">
+                <input type="text" class="search-bar" placeholder="Enter location i.e. 'London'">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="weather">
+
+            <h2 class="city"><span>London</span></h2>
+            <h1 class="temp">23<span>°C</span></h1>
+
+            <div class="flex">
+
+                <img src="https://openweathermap.org/img/wn/02d.png" alt="weather icon" class="icon"/>
+                <div class="description">Cloudy</div>
+
+            </div>
+
+            <div class="humidity">Humidity: 23%</div>
+            <div class="wind">Wind speed: 4mph</div>
+
+        </div>
+
+    </div>
+
+    </div>
+        
+
+    <script src="/app.js"></script>
+</body>
+
+</html>

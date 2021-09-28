@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    font-family: 'Lato', sans-serif;
+    background-image: url('https://unsplash.it/3840/2160');
+    background-size: cover;
+    background-position: bottom center;
+    background-color: hsla(14, 51%, 60%, 1);
+    background-blend-mode: multiply;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 1.7rem;
+}
+
+h1.temp {
+    margin-bottom: 1rem;
+}
+
+h1 span {
+    font-weight: 300;
+    font-style: italic;
+    color: rgba(224, 207, 160, 1);
+}
+
+h2.city {
+    font-size: 2rem;
+}
+
+.city span {
+    position: relative;
+    color: rgba(224, 207, 160, 1);
+    padding: 0 1rem;
+}
+
+.city span::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30%;
+    background: rgba(224, 175, 160, .2);
+    transform: skewX(-12deg);
+    top: 1.5rem;
+    right: 0;
+    bottom: 0;
+}
+
+.temp span {
+    font-weight: 300;
+    font-size: 1.25rem;
+    padding: 0 0.2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #F4F3EE;
+}
+
+.card {
+    background: #222;
+    padding: 2rem;
+    width: 100%;
+    max-width: 330px;
+    margin: 0 10%;
+    z-index: 99;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+button {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 3rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.65);
+    transition: 0.2s ease-in-out;
+    border-left: 2px rgba(255, 255, 255, 1);
+}
+
+input {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0;
+}
+
+input::placeholder {
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 0, 0, 0.15);
+    color: #fff;
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.3);
+    transform: skewX(-1deg)
+}
+
+.weather {
+    padding: 0 0.9rem;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+}
+
+.flex img {
+    margin: 0;
+    padding: 0;
+}
+
+img.icon {
+    position: relative;
+    right: 0.5rem;
+}
+
+i {
+    width: 1.5rem;
+    font-size: 1.025rem;
+}
