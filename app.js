@@ -28,7 +28,12 @@ let weather = {
         .then(data => this.displayWeather(data));
     },
 
+    // Method for retrieving exact data from API using destrucuring.
+
     displayWeather: function(data) {
+
+    // Renaming destructured elements so they do not conflict with data from API.
+
         const { name } = data;
         const { icon: cloudIcon, description: weatherDescription } = data.weather[0];
         const { temp, humidity: humidityPercent } = data.main;
@@ -44,14 +49,20 @@ let weather = {
         windSpeed.innerText = `Wind Speed: ${speed}km/h`;
     },
 
+    // Method for ensuring 'fetchWeather' executes based on value within user input.
+
     search: function() {
         this.fetchWeather(searchBar.value);
     },
 };
 
+    // When search button is clicked, then it executes the 'search' method above.
+
 searchButton.addEventListener('click', e => {
     weather.search();
 });
+
+    // When the user has clicked enter after search, then it also executes the 'search' method above.
 
 searchBar.addEventListener('keyup', e => {
     if (e.key === "Enter") {
