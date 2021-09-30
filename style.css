@@ -15,6 +15,7 @@ body {
     background-color: hsla(14, 51%, 60%, 1);
     background-blend-mode: multiply;
     height: 100vh;
+    overflow: hidden;
 }
 
 h1 {
