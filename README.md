@@ -2,7 +2,11 @@
 
 A weather app created using the free Open Weather API.
 
-Project can be viewed on: vaysweatherapp.netlify.com
+A GIF can be viewed below to demonstrate:
+
+![Weather API App](https://user-images.githubusercontent.com/82039703/135868959-94a9e932-4617-438f-9bf3-6e10d8915646.gif)
+
+Project can be viewed on: https://vaysweatherapp.netlify.com
 
 Features include: 
 
